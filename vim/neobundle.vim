@@ -20,7 +20,7 @@ NeoBundle 'Shougo/vimproc'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'scrooloose/nerdtree'
-nmap <return> :NERDTreeToggle<CR>
+nmap <Leader>n :NERDTreeToggle<CR>
 NeoBundle 'tpope/vim-rails'
 map <Leader>oc :Rcontroller<Space>
 map <Leader>ov :Rview<Space>
