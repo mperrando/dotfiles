@@ -53,3 +53,6 @@ hi def link scssComment	  Comment
 let b:current_syntax = "scss"
 
 set tags=.tags,.gemtags
+nmap <c-s> :update<cr>
+vmap <c-s> <c-c>:update<cr>
+imap <c-s> <c-o>:update<cr>
