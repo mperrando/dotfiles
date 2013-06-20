@@ -8,26 +8,31 @@ function install_file {
   echo "#### $1"
   TARGET=~/.$1
   SOURCE=.dotfiles/$1
-  if ! [ -e $SOURCE ]; then
+  if ! [ -e $SOURCE ]
+  then
     echo File not found $SOURCE
     return
   fi
 
-  if [ -h $TARGET ]; then
+  if [ -h $TARGET ]
+  then
     echo $TARGET is already a link. Removing.
     rm -f $TARGET
   fi
-  if [ -e $TARGET ]; then
+  if [ -e $TARGET ]
+  then
     echo $1 alsready exists!
-    if [ ! -f $TARGET -a ! -d $TARGET ]; then
+    if [ ! -f $TARGET -a ! -d $TARGET ]
+    then
       echo $TARGET is neither a file or directory. Skipping...
       return
     fi
-    echo Saving actual $1
-    mv $TARGET $TARGET.dotfiles-orig
+    SAVED=$TARGET.dotfiles-orig
+    echo Saving actual $TARGET to $SAVED
+    mv $TARGET $SAVED
   fi
 
-  echo Installing $1
+  echo Installing $SOURCE in $TARGET
   ln -s $SOURCE $TARGET
   echo "Done $1"
 }
