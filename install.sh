@@ -4,6 +4,11 @@ cd ~ || exit 1
 
 [ -d .dotfiles ] || { echo Install in ~/.dotfiles; exit 1; }
 
+pushd .dotfiles
+git submodule init
+git submodule update
+popd
+
 function install_file {
   echo "#### $1"
   TARGET=~/.$1
