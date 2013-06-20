@@ -1,0 +1,32 @@
+[user]
+	name = Marco Perrando
+	email = marco.perrando@gmail.com
+[http]
+	sslVerify = false
+[extensions]
+  rebase =
+[color]
+	ui = true
+  interactive = true
+[difftool]
+	prompt = false
+[diff]
+	tool = /usr/bin/vimdiff
+[core]
+	quotepath = false
+	excludesfile = ~/.gitignore_global
+	editor = /usr/bin/vim
+  whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
+  pager = less -r
+[alias]
+  ci = commit
+  co = checkout
+  st = status
+  l = log --decorate --graph
+  lol = log --oneline --decorate --graph
+  d = diff
+  dc = diff --cached
+  dw = diff --color-words
+  dcw = diff --cached --color-words
+  s = show
+  alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\\t => \\2/' | sort
