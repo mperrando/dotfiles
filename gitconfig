@@ -29,4 +29,5 @@
   dw = diff --color-words
   dcw = diff --cached --color-words
   s = show
+  sw = show --color-words
   alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\\t => \\2/' | sort
