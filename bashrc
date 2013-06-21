@@ -1,3 +1,13 @@
+function dotfiles-update {
+  [[ -z $(which git) ]] && return
+  [[ -d ~/.dotfiles ]] || { echo "Bad installation"; exit 1; }
+  pushd ~/.dotfiles > /dev/null
+  git pull --ff-only -q
+  popd > /dev/null
+}
+
+dotfiles-update
+
 [ -z "$PS1" ] && return
 [[ -s ~/.bashrc_local ]] && source ~/.bashrc_local
 bind -r '\C-s'
