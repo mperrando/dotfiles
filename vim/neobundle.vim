@@ -34,6 +34,7 @@ NeoBundle "scrooloose/syntastic"
 let g:syntastic_enable_signs=1
 let g:syntastic_quiet_warnings=1
 " let g:syntastic_disabled_filetypes = ['sass']
+NeoBundle 'ecomba/vim-ruby-refactoring'
 
 
 " NeoBundle 'rstacruz/sparkup', {'rtp': 'vim/'}
