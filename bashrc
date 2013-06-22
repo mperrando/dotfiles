@@ -1,3 +1,5 @@
+[[ -s ~/.bashrc_local ]] && source ~/.bashrc_local
+
 [ -z "$PS1" ] && return
 
 function dotfiles-update {
@@ -9,7 +11,6 @@ function dotfiles-update {
 }
 
 dotfiles-update
-[[ -s ~/.bashrc_local ]] && source ~/.bashrc_local
 bind -r '\C-s'
 stty -ixon
 export GREP_OPTIONS="--exclude=.svn --exclude=.git"
