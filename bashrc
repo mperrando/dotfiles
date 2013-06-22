@@ -1,3 +1,5 @@
+[ -z "$PS1" ] && return
+
 function dotfiles-update {
   [[ -z $(which git) ]] && return
   [[ -d ~/.dotfiles ]] || { echo "Bad installation"; exit 1; }
@@ -7,8 +9,6 @@ function dotfiles-update {
 }
 
 dotfiles-update
-
-[ -z "$PS1" ] && return
 [[ -s ~/.bashrc_local ]] && source ~/.bashrc_local
 bind -r '\C-s'
 stty -ixon
