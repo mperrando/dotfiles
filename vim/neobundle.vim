@@ -33,7 +33,8 @@ map <Leader>oi :Rintegration<Space>
 NeoBundle 'Shougo/unite.vim'
 NeoBundle "scrooloose/syntastic"
 let g:syntastic_enable_signs=1
-let g:syntastic_quiet_warnings=1
+let g:syntastic_quiet_warnings=0
+let g:syntastic_ruby_checkers = ['mri', 'rubocop']
 " let g:syntastic_disabled_filetypes = ['sass']
 NeoBundle 'ecomba/vim-ruby-refactoring'
 
