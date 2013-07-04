@@ -22,6 +22,7 @@ NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'scrooloose/nerdtree'
 nmap <Leader>n :NERDTreeToggle<CR>
 NeoBundle 'scrooloose/nerdcommenter'
+NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'tpope/vim-rails'
 map <Leader>oc :Rcontroller<Space>
 map <Leader>ov :Rview<Space>
