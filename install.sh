@@ -44,6 +44,7 @@ function install_file {
 
 echo Installing dotfiles...
 install_file 'bashrc'
+install_file 'bash'
 install_file 'vimrc'
 install_file 'vim'
 install_file 'gitconfig'
