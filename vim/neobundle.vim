@@ -39,6 +39,7 @@ let g:syntastic_ruby_checkers = ['mri', 'rubocop']
 " let g:syntastic_disabled_filetypes = ['sass']
 NeoBundle 'ecomba/vim-ruby-refactoring'
 NeoBundle 'tpope/vim-haml'
+NeoBundle 'tpope/vim-markdown'
 
 
 " NeoBundle 'rstacruz/sparkup', {'rtp': 'vim/'}
