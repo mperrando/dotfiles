@@ -40,6 +40,7 @@ let g:syntastic_ruby_checkers = ['mri', 'rubocop']
 NeoBundle 'ecomba/vim-ruby-refactoring'
 NeoBundle 'tpope/vim-haml'
 NeoBundle 'tpope/vim-markdown'
+NeoBundle 'terryma/vim-multiple-cursors'
 
 
 " NeoBundle 'rstacruz/sparkup', {'rtp': 'vim/'}
