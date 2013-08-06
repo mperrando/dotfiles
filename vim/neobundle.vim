@@ -19,8 +19,8 @@ NeoBundle 'Shougo/vimproc'
 " Original repos on github
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'Lokaltog/vim-easymotion'
-NeoBundle 'scrooloose/nerdtree'
-nmap <Leader>n :NERDTreeToggle<CR>
+" messo fuzzyfinder NeoBundle 'scrooloose/nerdtree'
+" nmap <Leader>n :NERDTreeToggle<CR>
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'tpope/vim-rails'
@@ -46,7 +46,7 @@ NeoBundle 'terryma/vim-multiple-cursors'
 " NeoBundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 " vim-scripts repos
 " NeoBundle 'L9'
-" NeoBundle 'FuzzyFinder'
+NeoBundle 'FuzzyFinder'
 " NeoBundle 'rails.vim'
 " Non github repos
 " NeoBundle 'git://git.wincent.com/command-t.git'
