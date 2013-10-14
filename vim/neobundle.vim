@@ -45,7 +45,7 @@ NeoBundle 'terryma/vim-multiple-cursors'
 
 " NeoBundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 " vim-scripts repos
-" NeoBundle 'L9'
+NeoBundle 'L9'
 NeoBundle 'FuzzyFinder'
 " NeoBundle 'rails.vim'
 " Non github repos

@@ -8,10 +8,6 @@
 [color]
 	ui = true
   interactive = true
-[difftool]
-	prompt = false
-[diff]
-	tool = /usr/bin/vimdiff
 [core]
 	quotepath = false
 	excludesfile = ~/.gitignore_global
