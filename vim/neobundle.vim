@@ -60,6 +60,10 @@ NeoBundle 'FuzzyFinder'
 
 " ...
 
+NeoBundle 'junza/Spink'
+NeoBundle 'slim-template/vim-slim'
+NeoBundle 'kchmck/vim-coffee-script'
+
 filetype plugin indent on     " Required!
 "
 " Brief help
