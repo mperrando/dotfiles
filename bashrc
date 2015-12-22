@@ -20,3 +20,5 @@ alias g=git
 complete -o bashdefault -o default -o nospace -F _git g
 PS1='\h:\W$(__git_ps1 "\[\e[1;31m\]@\[\033[1;33m\]%s\[\e[0m\]")\$ '
 . ~/.bash/ctags.sh
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
