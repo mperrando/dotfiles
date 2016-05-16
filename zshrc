@@ -50,10 +50,11 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git osx rails ruby)
+plugins=(git osx rails ruby rvm)
 
 # User configuration
 
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 export PATH="/Users/mperrando/.rvm/gems/ruby-2.2.3/bin:/Users/mperrando/.rvm/gems/ruby-2.2.3@global/bin:/Users/mperrando/.rvm/rubies/ruby-2.2.3/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/rvm/bin:/Users/mperrando/.rvm/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
