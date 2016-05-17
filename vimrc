@@ -59,3 +59,4 @@ imap <c-s> <c-o>:update<cr>
 
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
+colorscheme tender
