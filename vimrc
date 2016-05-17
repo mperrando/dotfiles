@@ -60,3 +60,6 @@ imap <c-s> <c-o>:update<cr>
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
 colorscheme tender
+" vim-airline
+set laststatus=2
+set timeoutlen=50
