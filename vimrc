@@ -13,6 +13,9 @@ set hlsearch
 set nowrap
 set nu
 
+" Fix: backspace only deletes characters of current edit
+set backspace=2
+
 runtime ftplugin/man.vim
 filetype plugin indent on " Enable filetype-specific indenting and plugins
 " Load matchit (% to bounce from do to end, etc.)
