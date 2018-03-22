@@ -62,7 +62,7 @@ vmap <c-s> <c-c>:update<cr>
 imap <c-s> <c-o>:update<cr>
 
 colorscheme tender
-highlight ExtraWhitespace ctermbg=red guibg=red2
+highlight ExtraWhitespace ctermbg=203 guibg=red
 match ExtraWhitespace /\s\+$/
 " vim-airline
 set laststatus=2
