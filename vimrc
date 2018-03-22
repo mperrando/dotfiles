@@ -61,9 +61,16 @@ nmap <c-s> :update<cr>
 vmap <c-s> <c-c>:update<cr>
 imap <c-s> <c-o>:update<cr>
 
+if (has("termguicolors"))
+ set termguicolors
+endif
+
 colorscheme tender
 highlight ExtraWhitespace ctermbg=203 guibg=red
 match ExtraWhitespace /\s\+$/
 " vim-airline
+" set lighline theme inside lightline config
+let g:lightline = { 'colorscheme': 'tender' }
+
 set laststatus=2
 set timeoutlen=50
