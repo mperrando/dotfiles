@@ -6,12 +6,13 @@ set modeline
 syntax on
 set ruler
 set textwidth=80
-set shiftwidth=4
+set shiftwidth=2
 set expandtab
 set tabstop=2
 set hlsearch
 set nowrap
 set nu
+set encoding=utf-8
 
 " Fix: backspace only deletes characters of current edit
 set backspace=2
