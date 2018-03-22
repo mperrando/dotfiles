@@ -60,9 +60,9 @@ nmap <c-s> :update<cr>
 vmap <c-s> <c-c>:update<cr>
 imap <c-s> <c-o>:update<cr>
 
-highlight ExtraWhitespace ctermbg=red guibg=red
-match ExtraWhitespace /\s\+$/
 colorscheme tender
+highlight ExtraWhitespace ctermbg=red guibg=red2
+match ExtraWhitespace /\s\+$/
 " vim-airline
 set laststatus=2
 set timeoutlen=50
