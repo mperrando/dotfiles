@@ -8,6 +8,27 @@
 [color]
 	ui = true
   interactive = true
+  branch = auto
+  diff = auto
+  status = auto
+
+[color "branch"]
+  current = blue reverse
+  local = blue
+  remote = green
+
+[color "diff"]
+  meta = yellow
+  frag = magenta
+  old = red bold
+  new = green
+  plain = white
+
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+
 [core]
 	quotepath = false
 	excludesfile = ~/.gitignore_global
@@ -27,6 +48,10 @@
   s = show
   sw = show --color-words
   alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\\t => \\2/' | sort
+# https://raw.githubusercontent.com/durdn/cfg/master/.gitconfig
+  ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+  ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+
 [gui]
 	recentrepo = /Users/mperrando/git/spie-sinkd
 [push]
