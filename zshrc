@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/mperrando/.dotfiles/oh-my-zsh
+export ZSH=~/.dotfiles/oh-my-zsh
 
 DEFAULT_USER="mperrando"
 # Set name of the theme to load.
