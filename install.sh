@@ -42,8 +42,23 @@ function install_file {
   echo "Done $1"
 }
 
+function save_bashrc_as_local {
+  if [ -e ~/.bashrc ]
+  then
+    if [ -e ~/.bashrc_local ]
+    then
+      echo Cannot save current .bashrc to .bashrc_local
+      echo .bahsrc will NOT be installed
+      return 1
+    else
+      echo Saving .basrc as .bashrc_local
+      mv ~/.bashrc ~/.bashrc_local
+    fi
+  fi
+}
+
 echo Installing dotfiles...
-install_file 'bashrc'
+save_bashrc_as_local && install_file 'bashrc'
 install_file 'bash'
 install_file 'vimrc'
 install_file 'vim'
