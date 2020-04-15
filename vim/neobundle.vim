@@ -18,7 +18,7 @@ NeoBundle 'Shougo/vimproc'
 " Note: You don't set neobundle setting in .gvimrc!
 " Original repos on github
 NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'Lokaltog/vim-easymotion'
+" NeoBundle 'Lokaltog/vim-easymotion'
 " messo fuzzyfinder NeoBundle 'scrooloose/nerdtree'
 " nmap <Leader>n :NERDTreeToggle<CR>
 NeoBundle 'scrooloose/nerdcommenter'
