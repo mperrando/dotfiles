@@ -66,6 +66,7 @@ NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'jacoborus/tender'
 NeoBundle 'vim-airline/vim-airline'
 NeoBundle 'sheerun/vim-polyglot'
+NeoBundle 'evanleck/vim-svelte'
 
 filetype plugin indent on     " Required!
 "
