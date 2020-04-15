@@ -74,3 +74,5 @@ let g:lightline = { 'colorscheme': 'tender' }
 
 set laststatus=2
 set timeoutlen=50
+let g:netrw_liststyle=3
+let g:netrw_banner=0
